@@ -1,0 +1,14 @@
+---
+version: 2.1
+
+orbs:
+  megalinter: relativesure/megalinter@volatile
+
+workflows:
+  run-megalinter:
+    jobs:
+      - megalinter/megalinter:
+          persist_megalinter_reports: true
+          run_git_operations: true
+          git_base_branch: master
+          flavor: cupcake
