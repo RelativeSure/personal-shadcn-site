@@ -1,0 +1,14 @@
+---
+layout: ../layouts/PagesLayout.astro
+title: "Welcome"
+author: "Rasmus"
+---
+
+import { Button } from "../components/ui/button";
+export const components = { button: Button };
+
+<button asChild client:load>
+  <p>
+    Read more <a href="/projects/work-in-progress">about</a> my projects!
+  </p>
+</button>

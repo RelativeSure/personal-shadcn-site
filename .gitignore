@@ -6,6 +6,7 @@ dist/
 
 # dependencies
 node_modules/
+pnpm-lock.yaml
 
 # logs
 npm-debug.log*
@@ -22,4 +23,6 @@ pnpm-debug.log*
 
 # jetbrains setting folder
 .idea/
-pnpm-lock.yaml
+
+# misc
+megalinter-reports/
